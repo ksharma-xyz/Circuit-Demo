@@ -1,10 +1,10 @@
-# Circuit Navigation and State Management Demo
+# Circuit - Navigation and State Management Demo
 
 This project demonstrates navigation and state management in an Android application using the
-Circuit framework developed by Slack.
+[Circuit](https://github.com/slackhq/circuit) framework developed by Slack.
 
-Circuit is a framework for building composable UI in Kotlin. It provides a declarative way to define
-UI components and manage their state. In this project, we leverage Circuit for:
+[Circuit](https://github.com/slackhq/circuit) is a framework for building composable UI in Kotlin.
+It provides a declarative way to define UI components and manage their state.
 
 ## Architecture
 
@@ -29,6 +29,9 @@ The project is organized into the following packages:
 - **data:** Contains data models and repositories.
 - **navigation:** Contains navigation-related components, such as the `Navigator` and `BackStack`.
 - **state:** Contains state management logic and data holders.
+
+## Features
+1. 
 
 ## Dependencies
 
