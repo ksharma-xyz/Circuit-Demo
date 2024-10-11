@@ -10,11 +10,11 @@ import com.slack.circuit.foundation.rememberCircuitNavigator
 @Composable
 fun CreateCircuit() {
     val circuit = Circuit.Builder()
-        .addPresenterFactory(DemoPresenter.Factory(DemoRepository()))
-        .addUi<DemoScreen, DemoScreen.State> { state, modifier -> DemoScreenUI(state, modifier) }
+        .addPresenterFactory(CityListPresenter.Factory(CityListRepository()))
+        .addUi<CityListScreen, CityListScreen.State> { state, modifier -> CityListScreen(state, modifier) }
         .build()
 
-    val backStack = rememberSaveableBackStack(DemoScreen("Hello"))
+    val backStack = rememberSaveableBackStack(CityListScreen)
     val navigator = rememberCircuitNavigator(backStack)
     CircuitCompositionLocals(circuit) {
         NavigableCircuitContent(navigator = navigator, backStack = backStack)
